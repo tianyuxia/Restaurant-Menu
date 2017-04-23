@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Make a New Restaurant</h1>
+<form method='post' enctype='multipart/form-data' action='/restaurants/new'>
+    <input name='rest_name' type='text' placeholder = 'New Restaurant Name'>
+    <input type='submit' value='Create'>
+</form>
+
+{% endblock %}

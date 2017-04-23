@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Menu</title>
+</head>
+<body>
+    {% if showmessage %}
+        <h2>Okay, how about this: </h2>
+        <h1>{{messagecontent}}</h1>
+    {% endif %}
+    <form method='post' enctype='multipart/form-data' action'/hello'>
+        <h2>What would you like to say?</h2>
+        <input name='message' type='text'>
+        <input type='submit' value='Submit'>
+    </form>
+</body>
+</html>

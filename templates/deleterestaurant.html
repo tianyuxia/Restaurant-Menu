@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Are you sure you want to delete {{rest.name}}?</h1>
+<form method='post' enctype='multipart/form-data' action='/restaurants/{{rest.id}}/delete' >
+    <input type='submit' value='Delete'>
+</form>
+
+{% endblock %}
